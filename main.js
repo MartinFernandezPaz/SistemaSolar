@@ -58,8 +58,7 @@ function getRing(size, innerDiameter, facets, myColor, name, distanceFromAxis) {
 
 /**
  * Se utiliza para crear un anillo tridimensional. Requiere más potencia de procesamiento para
- * ejecuta getRing (). Utilicar con moderación, como para el anillo de
- * Saturno.
+ * ejecuta getRing ().
  * @param {type} size decimal
  * @param {type} innerDiameter decimal
  * @param {type} facets integer
@@ -374,7 +373,7 @@ function init() {
     mars = loadTexturedPlanet(marsData, marsData.distanceFromAxis, 0, 0);
     jupiter = loadTexturedPlanet(jupiterData, jupiterData.distanceFromAxis, 0, 0);
     saturn = loadTexturedPlanet(saturnData, saturnData.distanceFromAxis, 0, 0);
-    ring = getTube(10, 0.05, 480, 0x757064, "ring", saturnData.distanceFromAxis);
+    ring = getTube(10, 1, 480, 0xFFFFFF, "ring", saturnData.distanceFromAxis);
     neptune = loadTexturedPlanet(neptuneData, neptuneData.distanceFromAxis, 0, 0);
     uranus = loadTexturedPlanet(uranusData, uranusData.distanceFromAxis, 0, 0);
 
